@@ -107,6 +107,7 @@ h3 {
 
 .section__title--intro {
   font-weight: var(--fw-reg);
+  margin-bottom: .25em;
 }
 
 .section__title--intro strong {
@@ -140,7 +141,7 @@ header {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 .nav {
@@ -453,4 +454,18 @@ header {
 
 .social-list__link {
   padding: 0.25em;
+}
+
+
+/* Individual portfolio item styles */
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
