@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-height, intitial-scale=1.0">
         <title>AndersHoltKnudsen Portfolio Website</title>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-
-        <script src="https://kit.fontawesome.com/80c4416256.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        
         <!-- Update these with your own fonts -->
         <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code:400,900|Source+Sans+Pro:300,900&display=swap">
 
+        <!-- Link to my own stylesheet -->
         <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/80c4416256.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -66,36 +66,62 @@
         <!-- ABOUT ME-->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about"></p>
+            <p class="section__subtitle section__subtitle--about">A software developer living in Aarhus</p>
 
             <div class="about-me__hobby">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque inventore possimus sit, repellat, recusandae eius commodi eligendi dolorum quibusdam maxime molestiae dolorem tempora pariatur officiis aut cumque quam atque illum?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloremque nesciunt, nulla quo sapiente id reiciendis et non earum dicta quis praesentium? Adipisci commodi veniam, et hic perspiciatis sed ea?</p>
             </div>
 
-            <img src="img/dev-jane-02.jpg" alt="Jane leaning aginst a bus">
+            <img src="img/dev-jane-02.jpg" alt="Jane leaning aginst a bus" class="about-me__img">
         </section>
 
         <!-- MY WORK -->
         <section class="my-work" id="work">
-            <h2 class="section__title">My work</h2>
-            <p class="section__subtitle"></p>
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
             <div class="portfolio">
                 <a href="#" class="portfolio__item">
                     <img src="img/portfolio-01.jpg" alt=" " class="portfolio__img">
                 </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt=" " class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt=" " class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt=" " class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt=" " class="portfolio__img">
+                </a>
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt=" " class="portfolio__img">
+                </a>
             </div>
         </section>
 
         <!-- FOOTER -->
-        <footer>
+        <footer class="footer">
             <a href="mailto:andhk11@gmail.com" class="footer__link">andhk11@gmail.com</a>
             <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link"></a></li>
-                <li class="social-list__item"><a class="social-list__link"></a></li>
-                <li class="social-list__item"><a class="social-list__link"></a></li>
-                <li class="social-list__item"><a class="social-list__link"></a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
             </ul>
         </footer>
     </body>
