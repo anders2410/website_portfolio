@@ -35,7 +35,7 @@
   }
 }
 
-/* General styles */
+/* ----------------------- General styles ----------------------- */
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -82,7 +82,7 @@ html {
   transition: transform 200ms ease-in-out;
 }
 
-/* Typography */
+/* ----------------------- Typography ----------------------- */
 h1,
 h2,
 h3 {
@@ -140,7 +140,7 @@ h3 {
   color: inherit;
 }
 
-/* ------------------- Header ------------------- */
+/* ----------------------- Header ----------------------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -200,6 +200,8 @@ header {
 }
 
 .nav-open .nav {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
   transition: 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
@@ -256,7 +258,7 @@ header {
   bottom: 6px;
 }
 
-/* Intro section */
+/* ----------------------- Intro section ----------------------- */
 .intro {
   position: relative;
 }
@@ -300,7 +302,7 @@ header {
   }
 }
 
-/* Services section */
+/* ----------------------- Services section ----------------------- */
 .my-services {
   background-color: var(--clr-dark);
   background-image: url(../img/close-up-code.jpg);
@@ -348,7 +350,7 @@ header {
   }
 }
 
-/* About me */
+/* ----------------------- About me ----------------------- */
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
@@ -391,7 +393,7 @@ header {
   }
 }
 
-/* My work */
+/* ----------------------- My work ----------------------- */
 .my-work {
   background-color: var(--clr-dark);
   color: var(--clr-light);
@@ -400,46 +402,113 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  display: inline-block;
+  margin: 5px;
+  text-align: left;
+  opacity: 1;
   overflow: hidden;
   position: relative;
+  box-shadow: var(--bs);
 }
 
-.portfolio__item-img {
-  transition: 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-  transform: scale(1.2);
-  display: block;
-}
-
-.portfolio__item:focus {
-  position: relative;
-  z-index: 2;
-}
-
-.portfolio__item:hover .portfolio__item-img,
-.portfolio__item:focus .portfolio__item-img {
-  transform: scale(1);
-  opacity: 0.6;
-}
-
-.text {
-  color: var(--clr-light);
-  font-weight: var(--fw-bold);
-  font-size: 35px;
+.portfolio__item:before {
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
-/* Footer */
+.portfolio__item img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.portfolio__item .details {
+  font-size: 16px;
+  padding: 1em;
+  color: var(--clr-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.portfolio__item span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+
+  -webkit-transition-property: top, opacity;
+          transition-property: top, opacity;
+
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.portfolio__item .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.portfolio__item .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.portfolio__item:focus:before,
+.portfolio__item:focus span,
+.portfolio__item:hover:before,
+.portfolio__item:hover span {
+  opacity: 1;
+}
+
+.portfolio__item:focus:before,
+.portfolio__item:hover:before {
+  top: 50%;
+}
+
+.portfolio__item:focus span,
+.portfolio__item:hover span {
+  top: 0;
+}
+
+.portfolio__item:focus .title,
+.portfolio__item:hover .title {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.portfolio__item:focus .info,
+.portfolio__item:hover .info {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+/* ----------------------- Footer ----------------------- */
 .footer {
   background: #111;
   color: var(--clr-accent);
@@ -484,7 +553,7 @@ header {
 }
 
 
-/* Individual portfolio item styles */
+/* ----- Individual portfolio item styles ----- */
 .portfolio-item-individual {
   padding: 0 2em 2em;
   max-width: 1000px;
