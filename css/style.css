@@ -131,13 +131,17 @@ h3 {
 .section__subtitle--work {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .inline-ref {
   text-decoration: none;
   font-weight: var(--fw-bold);
   color: inherit;
+}
+
+img.rounded-corners {
+  border-radius: 3px;
 }
 
 /* ----------------------- Header ----------------------- */
@@ -407,6 +411,7 @@ header {
 
 .portfolio__item {
   display: inline-block;
+  border-radius: 3px;
   margin: 5px;
   text-align: left;
   opacity: 1;
