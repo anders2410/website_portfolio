@@ -301,7 +301,6 @@ header {
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
-  height: 650px;
 }
 
 .section__title--services {
@@ -364,7 +363,7 @@ header {
 
   .section__title--about {
     grid-area: title;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
   }
 
   .section__subtitle--about {
