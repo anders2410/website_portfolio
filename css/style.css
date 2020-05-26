@@ -560,7 +560,7 @@ header {
 
 /* ----- Individual portfolio item styles ----- */
 .portfolio-item-individual {
-  padding: 0 2em 2em;
+  padding: 0 2em 2em 0;
   max-width: 1000px;
   margin: 0 auto;
 }
