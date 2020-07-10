@@ -1,1 +1,2 @@
-This is my Portfolio!
+### My portfolio!
+This repository is used for my website portfolio. The website is hosted using Netlify, where I'm able to connect this __repo__ with Netlify directly. If the website is configured in the right way with an index.html, it will be display at the webpage https://anders-holt-portfolio.netlify.app/.
