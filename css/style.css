@@ -102,7 +102,7 @@ h3 {
   font-size: var(--fs-h3);
 }
 
-.section__tile {
+.section__title {
   margin-bottom: 0.25em;
 }
 
@@ -126,6 +126,7 @@ h3 {
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
+  min-width: 200px;
 }
 
 .section__subtitle--work {
@@ -269,6 +270,7 @@ header {
 
 .intro__img {
   box-shadow: var(--bs);
+  min-width: 200px;
 }
 
 /* Being the size of itself */
@@ -564,13 +566,14 @@ header {
 }
 
 .portfolio-item-individual {
-  padding: 0 2em 2em 0;
+  padding: 0 2em 2em 2em;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .portfolio-item-individual p {
   max-width: 600px;
+  min-width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
