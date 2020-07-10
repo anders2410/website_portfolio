@@ -108,7 +108,7 @@ h3 {
 
 .section__title--intro {
   font-weight: var(--fw-reg);
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
 }
 
 .section__title--intro strong {
@@ -165,7 +165,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  opacity: .95;
+  opacity: 0.95;
 
   transform: translateX(100%);
   transition: 250ms cubic-bezier(0.5, 0, 0.5, 1);
@@ -424,8 +424,18 @@ header {
 
 .portfolio__item:before {
   content: "";
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0.7))
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   width: 100%;
   height: 50%;
   opacity: 0;
@@ -438,7 +448,7 @@ header {
   transition-property: top, opacity;
 
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .portfolio__item img {
@@ -465,13 +475,13 @@ header {
   top: 50%;
 
   -webkit-transition-property: top, opacity;
-          transition-property: top, opacity;
+  transition-property: top, opacity;
 
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 .portfolio__item .details .title {
@@ -506,13 +516,13 @@ header {
 .portfolio__item:focus .title,
 .portfolio__item:hover .title {
   -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
 
 .portfolio__item:focus .info,
 .portfolio__item:hover .info {
   -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 /* ----------------------- Footer ----------------------- */
@@ -558,7 +568,6 @@ header {
 .social-list__link {
   padding: 0.25em;
 }
-
 
 /* ----- Individual portfolio item styles ----- */
 .intro--portfolio {
