@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-height, intitial-scale=1.0" />
 
     <!-- These are some important META-tags for when sharing a link to this webpage. -->
-    <meta name="title" property="og:title" content="The Portfolio of Anders Holt Knudsen" />
-    <meta name="description" property="og:description" content="A collection of all my work and experiences I have gained through my study and work life." />
-    <meta name="image" property="og:image" content="https://anders-holt-portfolio.netlify.app/img/website_preview.png" />
+    <meta
+      name="title"
+      property="og:title"
+      content="The Portfolio of Anders Holt Knudsen"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="A collection of all my work and experiences I have gained through my study and work life."
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://anders-holt-portfolio.netlify.app/img/website_preview.png"
+    />
 
-    <meta name="author" content="Anders Holt Knudsen">
+    <meta name="author" content="Anders Holt Knudsen" />
 
     <title>AndersHoltKnudsen Portfolio Website</title>
     <link
@@ -25,6 +37,7 @@
 
     <!-- Link to my own stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/portfolio_cards.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -122,19 +135,20 @@
 
       <div class="about-me__hobby">
         <p>
-          I'm 24 years, currently living in Aarhus and have been doing so for the past 3 years. 
-          In summer 2020, I finished my Bachelor Degree in Computer Science. 
-          I am currently working as a software developer at Styrelsen for IT og Læring, 
-          and have been doing so since September 2020. I'm looking forward 
-          to applying my knowledge from the University in real-life applications.
+          I'm 24 years, currently living in Aarhus and have been doing so for
+          the past 3 years. In summer 2020, I finished my Bachelor Degree in
+          Computer Science. I am currently working as a software developer at
+          Styrelsen for IT og Læring, and have been doing so since September
+          2020. I'm looking forward to applying my knowledge from the University
+          in real-life applications.
         </p>
         <p>
           As a person, I am smiling and enjoying life. I love to travel and have
           been all around the world during my gap years and in my summer
-          vacations. Most recently I have been to Iceland, Poland, Iran and Japan.
-          My most memorable journeys have taken me all over
-          South-East Asia, where diving has become one of my new favourite hobbies. 
-          At home, I use my spare time with friends, Netflix and sports, mostly
+          vacations. Most recently I have been to Iceland, Poland, Iran and
+          Japan. My most memorable journeys have taken me all over South-East
+          Asia, where diving has become one of my new favourite hobbies. At
+          home, I use my spare time with friends, Netflix and sports, mostly
           floorball, where I play at the local club, Team Århus Floorball. I
           also enjoy watching sports, almost anything, but my favourite is
           football both European and American.
@@ -161,104 +175,152 @@
       <p class="section__subtitle section__subtitle--work">
         A selection of my projects.
       </p>
-      <div class="portfolio">
-        <a
-          href="portfolio_pages/portfolio_item_shortest_path.html"
-          class="portfolio__item"
-        >
-          <img
-            src="img/aerial-shot-of-maze.jpg"
-            alt=" "
-            class="portfolio__item-img rounded-corners"
-          />
+      <!--image card layout start-->
+      <div class="portfolio-container">
+        <!--image card start-->
+        <div class="portfolio-item">
+          <img src="img/aerial-shot-of-maze.jpg" alt="" />
           <div class="details">
-            <span class="title">Shortest Paths</span>
-            <span class="info"
-              >My bachelor project, where we explored Shortest Paths Algorithms
-              for finding the shortest path on data from openstreetmap.org. We
-              have implemented Dijkstra, AStar, Landmarks, Reach and Contraction
+            <h2>Shortest <span>Paths</span></h2>
+            <p class="text">
+              My bachelor project, where we explored, Shortest Paths Algorithms.
+              We implemented Dijkstra, AStar, Landmarks, Reach and Contraction
               Hierarchies.
-            </span>
+            </p>
+            <div class="more">
+              <a
+                href="portfolio_pages/portfolio_item_shortest_path.html"
+                class="read-more"
+              >
+                Read <span>More</span></a
+              >
+              <div class="icon-links">
+                <a href="https://github.com/anders2410/FxPathFinding" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </a>
-        <a
-          href="portfolio_pages/portfolio_item_heavymetaldk.html"
-          class="portfolio__item"
-        >
-          <img
-            src="img/android_studio_app_development.jpg"
-            alt=" "
-            class="portfolio__item-img rounded-corners"
-          />
+        </div>
+        <!--image card end-->
+
+        <!--image card start-->
+        <div class="portfolio-item">
+          <img src="img/android_studio_app_development.jpg" alt="" />
           <div class="details">
-            <span class="title">HeavyMetalDK</span>
-            <span class="info"
-              >An app we have made in the subject 'Human-Computer Interaction'
-              in University. It takes information from heavymetal.dk via an API
-              and displays it in the app. It was made with Android Studio and
-              Java.
-            </span>
+            <h2>Heavy<span>MetalDK</span></h2>
+            <p class="text">
+              An app we have made in the subject 'Human-Computer Interaction' at
+              University. It takes information from heavymetal.dk via an API and
+              displays it in the app.
+            </p>
+            <div class="more">
+              <a
+                href="portfolio_pages/portfolio_item_heavymetaldk.html"
+                class="read-more"
+              >
+                Read <span>More</span></a
+              >
+              <div class="icon-links">
+                <a href="https://github.com/anders2410" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </a>
-        <a href="#" class="portfolio__item">
-          <img
-            src="img/website-portfolio.jpg"
-            alt=" "
-            class="portfolio__item-img rounded-corners"
-          />
+        </div>
+        <!--image card end-->
+
+        <!--image card start-->
+        <div class="portfolio-item">
+          <img src="img/website-portfolio.jpg" alt="" />
           <div class="details">
-            <span class="title">My Website Portfolio</span>
-            <span class="info"
-              >The project of building my online portfolio. It was created using
-              HTML, CSS and JavaScript. It helped me get a better understanding
-              of Web-development.
-            </span>
+            <h2>My Website <span>Portfolio</span></h2>
+            <p class="text">
+              The project of building my online portfolio. It was created using
+              HTML, CSS and JavaScript.
+            </p>
+            <div class="more">
+              <a
+                href="portfolio_pages/portfolio_item_shortest_path.html"
+                class="read-more"
+              >
+                Read <span>More</span></a
+              >
+              <div class="icon-links">
+                <a href="https://github.com/anders2410/website_portfolio" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </a>
-        <a href="#" class="portfolio__item">
-          <img
-            src="img/minesweeper-1.jpg"
-            alt=" "
-            class="portfolio__item-img rounded-corners"
-          />
+        </div>
+        <!--image card end-->
+
+        <!--image card start-->
+        <div class="portfolio-item">
+          <img src="img/minesweeper-1.jpg" alt="" />
           <div class="details">
-            <span class="title">Minesweeper</span>
-            <span class="info"
-              >A fun little side project to explore some of the possibilities in
+            <h2>Mine<span>sweeper</span></h2>
+            <p class="text">
+              A fun little side project to explore some of the possibilities in
               Java. It is playable from the command-line.
-            </span>
+            </p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="https://github.com/anders2410/small_projects_in_java/tree/master/src/minesweeper" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </a>
-        <!-- <a href="#" class="portfolio__item">
-          <img
-            src="img/tic_tac_toe.jpg"
-            alt=" "
-            class="portfolio__item-img rounded-corners"
-          />
+        </div>
+        <!--image card end-->
+
+        <!--image card start-->
+        <!-- <div class="portfolio-item">
+          <img src="5.jpg" alt="" />
           <div class="details">
-            <span class="title">Tic-Tac-Toe</span>
-            <span class="info"
-              >Another small side project game. It is playable in the
-              command-line, and can be played against other users or three
-              different levels of AI (easy, medium and hard).
-            </span>
+            <h2>Your <span>Title</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
           </div>
-        </a> -->
-        <!-- <a href="#" class="portfolio__item">
-          <img
-            src="img/mockup-smartphone-technology-phone.jpg"
-            alt=" "
-            class="portfolio__item-img rounded-corners"
-          />
+        </div> -->
+        <!--image card end-->
+
+        <!--image card start-->
+        <!-- <div class="portfolio-item">
+          <img src="6.jpg" alt="" />
           <div class="details">
-            <span class="title">Contact App</span>
-            <span class="info"
-              >A simple 'Contacts App' made in Android Studio using Flutter and
-              dart.</span
-            >
+            <h2>Your <span>Title</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="more">
+              <a href="#" class="read-more">Read <span>More</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-paperclip"></i></a>
+              </div>
+            </div>
           </div>
-        </a> -->
+        </div> -->
+        <!--image card end-->
       </div>
+      <!--image card layout end-->
     </section>
 
     <!-- FOOTER -->
